@@ -1,7 +1,7 @@
 class WavesController < ApplicationController
   def create
-    maker = MostlyDev::WaveMaker.new wave_params
-    ouputs = maker.make_waves!
+    # maker = MostlyDev::WaveMaker.new wave_params
+    # maker.make_waves!
   end
 
   private
