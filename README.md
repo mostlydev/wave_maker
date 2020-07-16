@@ -27,7 +27,13 @@ SOFTWARE.
 
 This is a tool that converts PayPal CSV exports to Wave Accounting-compatible import files.
 
-## Simplest Use
+## Simplest Use (Web-based)
+
+I've created a web page where you can use this script without having to run it on your computer:
+
+https://www.mostlydev.com/make-waves/
+
+## Download and Run Manually
 
 Save your PayPal CSV into a folder, let’s say you called it: `PayPal.CSV`
 
@@ -55,3 +61,7 @@ Copyright (c) 2019 Wojtek Grabski (mostlydev.com)
 That’s it.
 
 You should import each of the resulting csv files into its own currency-specific PayPal account in Wave.
+
+## TODO
+
+The actual little app that runs it.
