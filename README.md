@@ -1,4 +1,4 @@
-# WaveMaker
+# Wave Maker
 
 ## License
 
@@ -33,12 +33,12 @@ Save your PayPal CSV into a folder, let’s say you called it: `PayPal.CSV`
 
 Download `make_wave.rb` from Terminal.
 
-$ curl https://raw.githubusercontent.com/mostlydev/wave_maker/master/lib/mostlydev/wave_maker.rb > make_wave.rb
+$ curl https://raw.githubusercontent.com/mostlydev/wave_maker/master/lib/mostlydev/wave_maker.rb > wave_maker.rb
 
 Then, run the script on your CSV file:
 
 ```
-$ ruby make_wave.rb PayPal.CSV
+$ ruby wave_maker.rb PayPal.CSV
 ```
 
 You’ll see some output like this:
