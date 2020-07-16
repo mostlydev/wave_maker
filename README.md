@@ -1,25 +1,34 @@
-# README
+# WaveMaker
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Summary
 
-Things you may want to cover:
+This is a tool that converts PayPal CSV exports to Wave Accounting-compatible import files.
 
-* Ruby version
+## Simplest Use
 
-This project was developed for Ruby 2.7+
+Save your PayPal CSV into a folder, let’s say you called it: `PayPal.CSV`
 
-* System dependencies
+Download `make_wave.rb` from Terminal.
 
-You need to have the `file` command.  It's used to identify character sets of incoming CSVs.
+$ curl https://raw.githubusercontent.com/mostlydev/wave_maker/master/lib/mostlydev/wave_maker.rb > make_wave.rb
 
-* Configuration
+Then, run the script on your CSV file:
 
-* How to run the test suite
+```
+$ ruby make_wave.rb PayPal.CSV
+```
 
-    $ bundle exec rspec
+You’ll see some output like this:
 
-* Contributing
+```
+PayPal to Wave-importable CSV converter
+Copyright (c) 2019 Wojtek Grabski (mostlydev.com)
+------
+... created PayPal.usd.wave.csv
+... created PayPal.cad.wave.csv
+... outputted 2202 rows
+```
 
-This repository uses the git flow paradigm.  Please follow it.  If you'd like to merge to master then please make a PR.
+That’s it.
 
+You should import each of the resulting csv files into its own currency-specific PayPal account in Wave.
